@@ -1,0 +1,37 @@
+smartcart/
+│
+├── client/                    # Frontend (React.js)
+│   ├── public/
+│   └── src/
+│       ├── components/        # Reusable UI components (Navbar, ProductCard, etc.)
+│       ├── pages/             # Main pages (Home, ProductList, Cart, Profile, etc.)
+│       ├── services/          # API calls to backend
+│       ├── context/           # Context providers for global state (e.g., user auth)
+│       └── App.js             # Root React component
+│
+├── server/                    # Backend (Node.js or Django)
+│   ├── controllers/           # Logic for routes (e.g., recommend, user actions)
+│   ├── routes/                # API endpoints
+│   ├── models/                # DB models (User, Product, Order, Feedback)
+│   ├── agents/                # AI agents (Recommendation, Profiling, Feedback, etc.)
+│   ├── chatbot/               # NLP agent logic (Dialogflow, Rasa, or custom)
+│   ├── utils/                 # Helper functions
+│   └── app.js                 # Main server file
+│
+├── ml_models/                 # Machine Learning models and scripts
+│   ├── recommender.py         # Product recommendation engine
+│   ├── profiling.py           # User profiling and clustering
+│   ├── feedback_loop.py       # Model tuning and learning from feedback
+│   └── model.pkl              # Saved models
+│
+├── database/                  # Seed data or schema (if separate)
+│   └── schema.sql or seed.js
+│
+├── config/                    # Configuration files (env, DB, API keys)
+│   └── config.js / .env
+│
+├── docs/                      # Documentation and diagrams
+│   └── architecture.png
+│
+├── package.json / requirements.txt   # Dependency management
+└── README.md                  # Project overview and instructions
